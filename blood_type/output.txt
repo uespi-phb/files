@@ -1,0 +1,96 @@
+T#   Message                                           
+T01  Bad individual genotype: A                        
+T02  Bad individual genotype: B                        
+T03  Bad individual genotype: i                        
+T04  Bad individual genotype: AC                       
+T05  Bad individual genotype:                          
+T06  Indiv1(A)                                         
+T07  Indiv2(A)                                         
+T08  Indiv3(B)                                         
+T09  Indiv4(B)                                         
+T10  Fulano(AB)                                        
+T11  Cicrano(O)                                        
+
+T#   INDIVIDUAL  GENOTYPE  ALLELES   AGGLUTINOGENS  AGLUTININS     
+T12  Indiv1(A)   AA        [A]       [A, A]         [B]            
+T13  Indiv2(A)   Ai        [A, i]    [A]            [B]            
+T14  Indiv3(B)   BB        [B]       [B, B]         [A]            
+T15  Indiv4(B)   Bi        [B, i]    [B]            [A]            
+T16  Fulano(AB)  AB        [A, B]    [A, B]         []             
+T17  Cicrano(O)  ii        [i]       [i]            [A, B]         
+
+T#   CROSSOVER   RESULT                                  
+T18  AA x AA     [AA]                                    
+T19  AA x Ai     [AA, Ai]                                
+T20  AA x BB     [AB]                                    
+T21  AA x Bi     [AB, Ai]                                
+T22  AA x AB     [AA, AB]                                
+T23  AA x ii     [Ai]                                    
+T24  Ai x AA     [AA, Ai]                                
+T25  Ai x Ai     [AA, Ai, Ai, ii]                        
+T26  Ai x BB     [AB, Bi]                                
+T27  Ai x Bi     [AB, Ai, Bi, ii]                        
+T28  Ai x AB     [AA, AB, Ai, Bi]                        
+T29  Ai x ii     [Ai, ii]                                
+T30  BB x AA     [AB]                                    
+T31  BB x Ai     [AB, Bi]                                
+T32  BB x BB     [BB]                                    
+T33  BB x Bi     [BB, Bi]                                
+T34  BB x AB     [AB, BB]                                
+T35  BB x ii     [Bi]                                    
+T36  Bi x AA     [AB, Ai]                                
+T37  Bi x Ai     [AB, Bi, Ai, ii]                        
+T38  Bi x BB     [BB, Bi]                                
+T39  Bi x Bi     [BB, Bi, Bi, ii]                        
+T40  Bi x AB     [AB, BB, Ai, Bi]                        
+T41  Bi x ii     [Bi, ii]                                
+T42  AB x AA     [AA, AB]                                
+T43  AB x Ai     [AA, Ai, AB, Bi]                        
+T44  AB x BB     [AB, BB]                                
+T45  AB x Bi     [AB, Ai, BB, Bi]                        
+T46  AB x AB     [AA, AB, AB, BB]                        
+T47  AB x ii     [Ai, Bi]                                
+T48  ii x AA     [Ai]                                    
+T49  ii x Ai     [Ai, ii]                                
+T50  ii x BB     [Bi]                                    
+T51  ii x Bi     [Bi, ii]                                
+T52  ii x AB     [Ai, Bi]                                
+T53  ii x ii     [ii]                                    
+
+T#   DONATION    RESULT                                  
+T54  AA -> AA    true                                    
+T55  AA -> Ai    true                                    
+T56  AA -> BB    false                                   
+T57  AA -> Bi    false                                   
+T58  AA -> AB    true                                    
+T59  AA -> ii    false                                   
+T60  Ai -> AA    true                                    
+T61  Ai -> Ai    true                                    
+T62  Ai -> BB    false                                   
+T63  Ai -> Bi    false                                   
+T64  Ai -> AB    true                                    
+T65  Ai -> ii    false                                   
+T66  BB -> AA    false                                   
+T67  BB -> Ai    false                                   
+T68  BB -> BB    true                                    
+T69  BB -> Bi    true                                    
+T70  BB -> AB    true                                    
+T71  BB -> ii    false                                   
+T72  Bi -> AA    false                                   
+T73  Bi -> Ai    false                                   
+T74  Bi -> BB    true                                    
+T75  Bi -> Bi    true                                    
+T76  Bi -> AB    true                                    
+T77  Bi -> ii    false                                   
+T78  AB -> AA    false                                   
+T79  AB -> Ai    false                                   
+T80  AB -> BB    false                                   
+T81  AB -> Bi    false                                   
+T82  AB -> AB    true                                    
+T83  AB -> ii    false                                   
+T84  ii -> AA    true                                    
+T85  ii -> Ai    true                                    
+T86  ii -> BB    true                                    
+T87  ii -> Bi    true                                    
+T88  ii -> AB    true                                    
+T89  ii -> ii    true                                    
